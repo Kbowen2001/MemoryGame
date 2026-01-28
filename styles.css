@@ -19,6 +19,8 @@ body{
 }
 
 .memory-card{
+    width:25%;
+    height:33.333%;
     border: 2px solid aqua;
 }
 

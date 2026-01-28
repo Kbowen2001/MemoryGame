@@ -35,6 +35,18 @@ function disableCards() {
   secondCard.removeEventListener('click', flipCard);
 
   resetBoard();
+  checkGameComplete();
+}
+
+function checkGameComplete() {
+  const allCards = document.querySelectorAll('.memory-card');
+  const flippedCards = document.querySelectorAll('.memory-card.flip');
+  
+  if (allCards.length === flippedCards.length) {
+    setTimeout(() => {
+      alert('Congratulations! You completed the game!');
+    }, 500);
+  }
 }
 
 function unflipCards() {
@@ -61,3 +73,4 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+

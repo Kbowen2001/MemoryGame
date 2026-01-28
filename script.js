@@ -17,7 +17,8 @@ function flipCard() {
             secondCard = this;
 
             //cards match?
-            
+            console.log(firstCard.dataset.framework);
+            console.log(secondCard.dataset.framework);
         }
 }
 
